@@ -20,4 +20,4 @@ COPY sensor/launch_ship.sh .
 COPY --from=builder /go/src/ship/ship .
 COPY --from=builder /go/src/ship/ui.html .
 
-CMD ["./ship"]
+CMD ["sleep", "10000"]
